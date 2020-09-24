@@ -1,0 +1,49 @@
+
+.typeahead{
+  width: 100%;
+  border: 1px solid gray;
+  box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 2px 4px 1px rgba(0,0,0, .18);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.73);
+}
+    
+.typeahead input{
+  width: 100%;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.73);
+  padding: 10px 5px ;
+  box-sizing: border-box;
+  outline: none;
+
+}
+.typeahead ul::before{
+  content: '';
+}
+
+.typeahead ul{
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid gray;
+}
+
+.typeahead li{
+  padding: 10px 5px ;
+  cursor: pointer;
+}
+
+.typeahead li:hover{
+  background: lightgray;
+  text-decoration: underline;
+}
+
+li .list-group-item:active {
+  z-index: 2;
+  color: #fff;
+  background-color: #4A4A4A;
+  border-color: #4A4A4A;
+}
